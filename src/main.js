@@ -1,28 +1,13 @@
 // Modules to control application life and create native browser window
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
-let mainWindow = null;
-
-const acquiredLock = app.requestSingleInstanceLock();
-console.log('did we acquire lock', acquiredLock);
-
-if(!acquiredLock) {
-  app.quit();
-} else {
-  app.on('second-instance', (event, commandLine, workingDirectory, additionalData) => {
-    if(mainWindow) {
-      if (myWindow.isMinimized()) myWindow.restore();
-      myWindow.focus();
-    }
-  });
-}
 
 const registered = app.setAsDefaultProtocolClient('protocol-handler-bug-on-postman');
 console.log('did we set default protocol', registered);
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({
+  const mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
     webPreferences: {

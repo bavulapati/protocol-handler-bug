@@ -1,8 +1,9 @@
 {
-  "name": "protocol-handler-bug-on-postman",
+  "name": "ProtocolHandlerBugOnPostman",
   "summary": "Isolated app to reproduce the protocol handler bug on postman",
   "output": "./dist",
   "version": "0.0.1",
   "protocol": "protocol-handler-bug-on-postman",
+  "identifier": "com.starship.protocol",
   "directory": "./src"
 }
