@@ -1,0 +1,8 @@
+{
+  "name": "protocol-handler-bug-on-postman",
+  "summary": "Isolated app to reproduce the protocol handler bug on postman",
+  "output": "./dist",
+  "version": "0.0.1",
+  "protocol": "protocol-handler-bug-on-postman",
+  "directory": "./src"
+}

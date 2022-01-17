@@ -1,0 +1,6 @@
+{
+  "name": "protocol-handler-bug-postman",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT"
+}
